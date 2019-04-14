@@ -1,0 +1,501 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif !important; }
+
+a {
+  text-decoration: none; }
+
+i {
+  color: #DE6262; }
+
+.fixed-nav {
+  position: fixed !important;
+  top: 0px;
+  z-index: 600;
+  width: 100%; }
+
+.red-span {
+  color: #DE6262; }
+
+#contact .contact-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1b7e9c;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  opacity: .2; }
+
+section {
+  margin: 60px 0; }
+  section:first-of-type {
+    margin: 0; }
+
+.work-content-fade {
+  display: block !important;
+  transition: 5s ease-in-out !important; }
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0.67em 0;
+  font-weight: bold; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1.12em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: .75em;
+  margin: 2.33em; }
+
+/***
+    Hero Section
+****/
+/***
+    Header
+***/
+header .contact-info {
+  width: 100%;
+  height: 50px;
+  background-color: #FFF;
+  border: 1px solid #ccc;
+  font-weight: bold; }
+  header .contact-info .info-right {
+    float: right; }
+    header .contact-info .info-right .book-button {
+      padding: 15px 10px;
+      background-color: #DE6262;
+      text-decoration: none;
+      color: #FFF;
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      display: inline-block; }
+  header .contact-info .info-left {
+    float: left;
+    font-size: 12px; }
+    header .contact-info .info-left ul {
+      display: table;
+      margin: 0 0 0 40px; }
+      header .contact-info .info-left ul li {
+        display: table-cell;
+        padding: 15px 10px; }
+        header .contact-info .info-left ul li:hover {
+          background-color: #f0efef; }
+      header .contact-info .info-left ul a {
+        color: black;
+        text-decoration: none; }
+header nav {
+  position: relative; }
+  header nav .navbar-brand {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.5s all ease-in-out; }
+  header nav .menu {
+    position: absolute;
+    right: 10%; }
+    header nav .menu li.active {
+      background-color: #DE6262; }
+      header nav .menu li.active a {
+        color: #FFF !important; }
+    header nav .menu li {
+      padding: 0px 20px;
+      font-weight: 500;
+      text-transform: uppercase; }
+      header nav .menu li:hover {
+        background-color: #ececec; }
+    header nav .menu i {
+      display: none; }
+
+/***Hero***/
+#hero .swiper-container {
+  width: 100%;
+  height: 600px;
+  overflow: hidden; }
+  #hero .swiper-container img {
+    width: 100%; }
+  #hero .swiper-container .swiper-slide {
+    position: relative; }
+  #hero .swiper-container .swiper-slide.swiper-slide-active .caption {
+    opacity: 1;
+    transform: scale(1.1); }
+  #hero .swiper-container .caption-white {
+    top: 31% !important;
+    left: 28% !important;
+    width: 47% !important; }
+  #hero .swiper-container .caption-blue h1, #hero .swiper-container .caption-blue p {
+    color: white;
+    opacity: 0.8 !important; }
+  #hero .swiper-container .caption {
+    position: absolute;
+    top: 18%;
+    left: 11%;
+    width: 31%;
+    color: #000;
+    opacity: 0;
+    z-index: 999;
+    transition: 1s ease-in-out;
+    transform: scale(0.2); }
+    #hero .swiper-container .caption h1 {
+      font-size: 45px;
+      text-transform: uppercase;
+      font-weight: 700; }
+    #hero .swiper-container .caption p {
+      font-size: 25px;
+      font-weight: 300; }
+#hero .services {
+  margin: 60px;
+  position: relative;
+  padding-left: 8%; }
+  #hero .services .serv-box {
+    margin-bottom: 20px;
+    float: left;
+    transition: .2s all ease-in-out; }
+    #hero .services .serv-box:hover i {
+      transform: scale(1.2);
+      color: #9c4040; }
+  #hero .services h3 {
+    color: black;
+    font-size: 17px;
+    font-weight: 600; }
+  #hero .services p {
+    font-size: 13px;
+    color: #6b6b6b;
+    width: 80%; }
+  #hero .services i {
+    position: absolute;
+    left: -10%;
+    font-size: 40px;
+    display: inline-block;
+    transition: .2s all ease-in-out; }
+    #hero .services i.fa-x-ray {
+      left: -13%; }
+    #hero .services i.fa-female {
+      left: -7%; }
+
+/****************
+** #contact**
+***************/
+#contact {
+  overflow: hidden; }
+  #contact .contact-image {
+    overflow: hidden;
+    width: 105%;
+    height: 699px;
+    background: url("C:/Users/Madien/Desktop/DEMedican/assets/img/contact.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #contact .contact-image img {
+      height: 100%;
+      width: 190%;
+      transform: translate(-48%, 0%);
+      background-size: cover;
+      background-repeat: no-repeat; }
+  #contact .contact-form {
+    width: 100%;
+    background-color: #DE6262;
+    color: #FFF; }
+    #contact .contact-form label {
+      font-size: 15px;
+      color: #f8f5f5;
+      letter-spacing: 1; }
+    #contact .contact-form form {
+      padding: 40px 50px 0; }
+      #contact .contact-form form .form-check {
+        margin-top: 20px; }
+      #contact .contact-form form .btn-light {
+        font-weight: 600;
+        margin: 30px 0;
+        transition: 0.3s all ease-in-out; }
+        #contact .contact-form form .btn-light:hover {
+          color: #FFF;
+          background-color: #1b1b1b;
+          border: #1b1b1b; }
+    #contact .contact-form h6 {
+      margin: 10px 0; }
+    #contact .contact-form .form-check {
+      margin-left: 20px; }
+
+#our-works .work-title {
+  position: relative;
+  cursor: pointer;
+  transition: .3s all ease-in-out; }
+  #our-works .work-title h3 {
+    transform: translate(6%, 50%);
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 70%;
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 20px; }
+  #our-works .work-title i {
+    font-size: 18px;
+    position: absolute;
+    top: 25px; }
+#our-works .work-content {
+  display: none;
+  transition: 0.3s all ease-in-out !important; }
+  #our-works .work-content p {
+    margin: 30px 40px 0px;
+    color: #6b6b6b;
+    width: 74%;
+    line-height: 1.9;
+    font-size: 14px; }
+#our-works .testimonials h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #676767; }
+#our-works .testimonials .testi-box {
+  margin: 50px 0;
+  padding-bottom: 10px;
+  border-bottom: 3px dotted #c5c5c5; }
+  #our-works .testimonials .testi-box .testi-image {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px; }
+    #our-works .testimonials .testi-box .testi-image.testi-2 img {
+      transform: scale(1.6) translateY(17%); }
+    #our-works .testimonials .testi-box .testi-image img {
+      width: 100%; }
+  #our-works .testimonials .testi-box .testi-content p.quote {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    color: #6b6b6b; }
+#our-works .stats {
+  width: 100%;
+  height: 150px;
+  background-color: #f1f0f0;
+  margin: 50px 0; }
+  #our-works .stats .stat-box {
+    margin: 50px 0;
+    position: relative;
+    display: inline-block; }
+    #our-works .stats .stat-box:hover i {
+      color: #DE6262;
+      transition: 0.5s ease-in-out; }
+    #our-works .stats .stat-box span {
+      font-size: 12px; }
+    #our-works .stats .stat-box i {
+      position: absolute;
+      top: -5px;
+      left: 25px;
+      font-size: 50px;
+      color: #5d5959; }
+      #our-works .stats .stat-box i.i-1 {
+        left: 41px; }
+      #our-works .stats .stat-box i.i-4 {
+        left: 51px; }
+    #our-works .stats .stat-box h5 {
+      font-size: 30px; }
+
+#our-team h3 {
+  margin: 30px 0 10px;
+  font-weight: 600; }
+#our-team p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #827d7d; }
+#our-team .team-box {
+  height: 400px;
+  width: 250px; }
+  #our-team .team-box .doctor-image {
+    height: 75%;
+    overflow: hidden; }
+    #our-team .team-box .doctor-image img {
+      width: 100%; }
+      #our-team .team-box .doctor-image img.doctor-3 {
+        height: 100%; }
+      #our-team .team-box .doctor-image img.doctor-5 {
+        height: 322px;
+        width: 414px;
+        transform: translate(-36%, 0%); }
+#our-team .owl-dot.active span {
+  background: #DE6262; }
+
+/**
+    Footer
+**/
+#footer {
+  background-color: #F5F5F5;
+  border-top: 2px solid rgba(0, 0, 0, 0.06);
+  padding: 80px 0;
+  height: 480px; }
+  #footer .col-md-7 {
+    margin-top: 20px; }
+    #footer .col-md-7 h4 {
+      text-transform: uppercase; }
+    #footer .col-md-7 p {
+      font-size: 1.15rem; }
+  #footer .subscribe {
+    background-color: #FFF;
+    width: 70%; }
+    #footer .subscribe::placeholder {
+      opacity: .5; }
+  #footer button {
+    padding: 10px 20px;
+    margin-left: 7px;
+    background-color: #DE6262; }
+  #footer h3 {
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #6b6868;
+    letter-spacing: 2px;
+    font-weight: 600; }
+  #footer a i {
+    font-size: 40px;
+    margin-right: 20px; }
+  #footer #about h4 {
+    margin: 10px 0;
+    font-weight: 700; }
+  #footer #about p {
+    font-weight: 400;
+    color: #828282; }
+
+/*****
+    Media Queries
+****/
+@media only screen and (max-width: 992px) {
+  .overlay-nav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s; }
+    .overlay-nav i {
+      font-size: 45px;
+      color: #FFF;
+      display: block !important;
+      margin: 40px 50px;
+      .
+            cursor: pointer; }
+
+  .stats {
+    height: 300px !important; }
+
+  .navbar-nav {
+    position: relative;
+    top: 25%;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    margin: 0 auto;
+    transition: 0.5s all ease-in-out; }
+    .navbar-nav li.nav-item a.nav-link {
+      color: #FFF; }
+
+  #hero .services i {
+    font-size: 28px; }
+
+  #our-works .work-title i {
+    left: -10px; }
+    #our-works .work-title i.fa-air-freshener {
+      left: -3px; }
+
+  #our-team .team-box {
+    height: 400px;
+    width: 200px; }
+    #our-team .team-box .doctor-image {
+      height: 67%; } }
+#loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #DE6262;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  #loading .lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    transform: rotate(45deg);
+    transform-origin: 32px 32px;
+    top: 50%;
+    left: 50%; }
+  #loading .lds-heart div {
+    top: 23px;
+    left: 19px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1); }
+  #loading .lds-heart div:after,
+  #loading .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: #fff; }
+  #loading .lds-heart div:before {
+    left: -17px;
+    border-radius: 50% 0 0 50%; }
+  #loading .lds-heart div:after {
+    top: -17px;
+    border-radius: 50% 50% 0 0; }
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95); }
+  5% {
+    transform: scale(1.1); }
+  39% {
+    transform: scale(0.85); }
+  45% {
+    transform: scale(1); }
+  60% {
+    transform: scale(0.95); }
+  100% {
+    transform: scale(0.9); } }
+@media only screen and (max-width: 768px) {
+  #our-works .works {
+    margin-bottom: 50px; }
+
+  .stats {
+    height: 300px !important; }
+
+  #hero .swiper-container {
+    height: 420px; }
+
+  #footer {
+    height: 700px;
+    text-align: center; }
+    #footer button {
+      margin: 13px 32%; }
+    #footer .subscribe {
+      width: 100%; }
+
+  .caption-white p {
+    font-size: 13px !important; } }
+
+/*# sourceMappingURL=style.css.map */
