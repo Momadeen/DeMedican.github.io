@@ -258,7 +258,7 @@ header {
         overflow: hidden;
         width: 105%;
         height: 699px;
-        background: url('C:/Users/Madien/Desktop/DEMedican/assets/img/contact.jpg') center center;
+        background: url('https://lh3.googleusercontent.com/jhdwn8bwc_PCFQfUGrpCXF_u370TDAdYREwfVlD5DEReNGV15EAjs2zY4PoF6fE3LUIbFMJEcWQ=w640-h400-e365') center center;
         background-size: cover;
         background-repeat: no-repeat; 
 
@@ -276,6 +276,9 @@ header {
     }
 
     .contact-form {
+        h2 {
+            font-weight: 700;
+        }
         width: 100%;
         background-color: $main-color;
         color: #FFF;
@@ -679,5 +682,68 @@ header {
     }
     .caption-white p {
         font-size: 13px!important;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    .contact-info {
+        ul {
+            margin: 0!important;
+
+            li {
+                padding: 6px 10px!important;
+            }
+        }
+        .info-right {
+            width: 100%;
+            .book-button {
+                padding: 15px 22px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    #hero .swiper-container {
+        height: 250px;
+        .caption {
+            &.caption-white {
+                left: 7% !important;
+                p {
+                    width: 150%!important;
+                }
+                
+            }
+            p {
+                font-size: 10px!important;
+                width: 200%!important;
+            }
+        }
+    }
+    .serv-box i {
+        left: -15%!important;
+    }
+    .work-title {
+        padding-left: 10px!important;
+    }
+    #our-works .stats  {
+        height: 450px!important;
+        .stat-box {
+            margin: 20px 0!important;
+        }
+    }
+    #footer {
+        height: 1100px!important;
+    }
+    .contact-form {
+        h2 {
+            font-weight: 700!important;
+            margin-bottom: 15px!important;
+        }
+    }
+    #loading {
+        .lds-heart {
+            top: 55%;
+            left: 40%;
+        }
     }
 }
