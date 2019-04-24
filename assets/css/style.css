@@ -543,4 +543,19 @@ header nav {
     top: 55%;
     left: 40%; } }
 
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #our-works .stats {
+        height: 630px!important;
+    }
+    #our-team .team-box .doctor-image {
+        height: 50%!important;
+    }
+    #our-team .team-box {
+        height: 315px!important;
+        width: 143px!important;
+    }
+    #footer {
+        height: 800px!important;
+    }
+}
 /*# sourceMappingURL=style.css.map */
