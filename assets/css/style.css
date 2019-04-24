@@ -558,4 +558,9 @@ header nav {
         height: 800px!important;
     }
 }
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    #footer {
+        height: 750px!important;
+    }
+}
 /*# sourceMappingURL=style.css.map */
